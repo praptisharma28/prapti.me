@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prapti Sharma</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- SEO -->
+  <meta name="description" content="Prapti Sharma — Software Engineer at Triton, GSoC alumni, Solana developer, and open-source contributor with 195+ merged PRs.">
+  <meta name="author" content="Prapti Sharma">
+  <meta name="theme-color" content="#1a1a1a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Prapti Sharma">
+  <meta property="og:description" content="Software Engineer at Triton. Solana developer, GSoC alumni, and open-source contributor.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prapti.me">
+  <meta property="og:image" content="https://prapti.me/og.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@praptichilling">
+  <meta name="twitter:title" content="Prapti Sharma">
+  <meta name="twitter:description" content="Software Engineer at Triton. Solana developer, GSoC alumni, and open-source contributor.">
+  <meta name="twitter:image" content="https://prapti.me/og.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://prapti.me">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap');
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #faf9f7;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #2c2c2c;
+      --border: #e0ddd8;
+      --link: #1a1a1a;
+      --link-hover: #555;
+      --section-gap: 2.8rem;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    /* Header */
+    header { margin-bottom: var(--section-gap); }
+
+    h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 2.6rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.6rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 1.2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .links a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .links a:hover {
+      color: var(--text);
+      border-bottom-color: var(--text);
+    }
+
+    .tagline {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.8rem;
+      font-style: italic;
+    }
+
+    /* Sections */
+    section { margin-bottom: var(--section-gap); }
+
+    h2 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1.35rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Experience / Education entries */
+    .entry { margin-bottom: 1.6rem; }
+    .entry:last-child { margin-bottom: 0; }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .entry-title {
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .entry-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .entry-subtitle {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 0.35rem;
+    }
+
+    .entry ul {
+      padding-left: 1.2rem;
+      font-size: 0.88rem;
+      color: #333;
+    }
+
+    .entry ul li { margin-bottom: 0.25rem; }
+    .entry ul li:last-child { margin-bottom: 0; }
+
+    /* Projects */
+    .project { margin-bottom: 1.4rem; }
+    .project:last-child { margin-bottom: 0; }
+
+    .project-title {
+      font-weight: 500;
+      font-size: 0.95rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .project-tech {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .project p {
+      font-size: 0.88rem;
+      color: #333;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 0.5rem 1.5rem;
+      font-size: 0.88rem;
+    }
+
+    .skills-grid dt {
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    .skills-grid dd { color: #333; }
+
+    /* Achievements */
+    .achievements {
+      list-style: none;
+      padding: 0;
+    }
+
+    .achievements li {
+      font-size: 0.88rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .achievements li::before {
+      content: '\203A';
+      position: absolute;
+      left: 0;
+      color: var(--muted);
+    }
+
+    /* Links in content */
+    .content-link {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: border-color 0.2s;
+    }
+
+    .content-link:hover { border-bottom-color: var(--text); }
+
+    /* Smart contracts grid */
+    .contracts-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+    }
+
+    .contract-item {
+      font-size: 0.85rem;
+      padding: 0.5rem 0;
+    }
+
+    .contract-item a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: border-color 0.2s;
+    }
+
+    .contract-item a:hover { border-bottom-color: var(--text); }
+
+    .contract-desc {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container { padding: 2.5rem 1.4rem 4rem; }
+      h1 { font-size: 2rem; }
+      .entry-header { flex-direction: column; }
+      .skills-grid { grid-template-columns: 1fr; gap: 0.3rem; }
+      .skills-grid dt { margin-top: 0.4rem; }
+      .contracts-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Prapti Sharma</h1>
+      <div class="links">
+        <a href="mailto:praptisharma28@gmail.com">Gmail</a>
+        <a href="https://github.com/praptisharma28" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/prapti-sharma-796080257/" target="_blank">LinkedIn</a>
+        <a href="https://t.me/praptisharma" target="_blank">Telegram</a>
+        <a href="https://medium.com/@praptii" target="_blank">Blogs</a>
+        <a href="https://gist.github.com/praptisharma28/27418977042ff37daac7d0b6de930d26" target="_blank">Proof of Work</a>
+        <a href="https://gist.github.com/praptisharma28/30e664942138db0abe162f7c8e0aad85" target="_blank">OSS Contributions</a>
+      </div>
+    </header>
+
+    <!-- Experience -->
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Software Engineer, <a class="content-link" href="https://triton.one" target="_blank">Triton</a> (Solana RPC Provider)</span>
+          <span class="entry-meta">Dec 2025 &ndash; Present &middot; Remote</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">AI Intern, <a class="content-link" href="https://www.linkedin.com/company/epsiloncreative/posts/?feedView=all" target="_blank">Epsilon Creative Agency</a></span>
+          <span class="entry-meta">Feb 2025 &ndash; Jun 2025 &middot; On-campus</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Back-End Developer, <a class="content-link" href="https://swyftin.com" target="_blank">Swyftin</a></span>
+          <span class="entry-meta">Dec 2024 &ndash; May 2025 &middot; Hybrid</span>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Freelance: <a class="content-link" href="https://x.com/gocabs_xyz" target="_blank">GoCabs</a>, <a class="content-link" href="https://x.com/blockride_xyz" target="_blank">BlockRide</a>, Actv</span>
+          <span class="entry-meta">Contract &middot; Remote</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">B.Tech in CS &amp; Engineering (AIML), KIET Group of Institutions</span>
+          <span class="entry-meta">Oct 2022 &ndash; May 2026</span>
+        </div>
+        <div class="entry-subtitle">Affiliated to AKTU &middot; Ghaziabad, Delhi-NCR</div>
+        <ul>
+          <li>CGPA: 8.8</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Solana Turbine Fellow</span>
+          <span class="entry-meta">Oct 2025 &ndash; Nov 2025</span>
+        </div>
+        <div class="entry-subtitle">Solana Talent Engine &middot; Remote</div>
+        <ul>
+          <li>Graduated as a builder; selected for an advanced program.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Solana SuperDev Fellow</span>
+          <span class="entry-meta">Jul 2025 &ndash; Sep 2025</span>
+        </div>
+        <div class="entry-subtitle">Solana Foundation &middot; Remote</div>
+        <ul>
+          <li>Graduated among top 20 global developers; won a $3,000 bounty.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">RLPKD School (CBSE)</span>
+          <span class="entry-meta">Apr 2019 &ndash; Apr 2021</span>
+        </div>
+        <div class="entry-subtitle">Non-Medical with Computer Science &middot; Mathura, UP</div>
+        <ul>
+          <li>10th: 96% &middot; 12th: 95.6%</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section>
+      <h2>A Few Good Projects</h2>
+
+      <div class="project">
+        <div class="project-title">Solana Real-time Transaction Indexer</div>
+        <div class="project-tech">TypeScript, Node.js, gRPC, PostgreSQL, Yellowstone &middot; <a class="content-link" href="https://github.com/praptisharma28/Solana-Real-time-Transaction-Indexer" target="_blank">GitHub</a></div>
+        <p>High-performance, real-time Solana blockchain indexer that streams live transaction data via Yellowstone gRPC and stores in PostgreSQL. Raised $900 and quoted by Anatoly Yakovenko (Solana founder). Featured in Superteam India community wins.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Secure Tiplink-like Platform</div>
+        <div class="project-tech">Rust, Actix, MPC, gRPC, Jupiter API, Solana</div>
+        <p>Secure "Tiplink-like" dApp using 3 MPC servers for private key management, with Jupiter Swap API and a Yellowstone gRPC-powered indexer. Focuses on walletless transfers with added cryptographic security.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-title">x402 Gateway for Triton</div>
+        <div class="project-tech">Old Faithful Historical Data &middot; <a class="content-link" href="https://x.com/praptichilling/status/1988993338318680367" target="_blank">Tweet</a></div>
+        <p>Built x402 gateway for Triton for Old Faithful historical data. Won the side track by Triton in the Solana x402 hackathon.</p>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Solana CEX</div>
+        <div class="project-tech">Rust, Solana &middot; <a class="content-link" href="https://github.com/praptisharma28/Solana-CEX" target="_blank">GitHub</a></div>
+        <p>A centralized cryptocurrency exchange with Solana blockchain integration.</p>
+      </div>
+    </section>
+
+    <!-- Solana Smart Contracts -->
+    <section>
+      <h2>Solana Smart Contracts</h2>
+      <div class="contracts-grid">
+        <div class="contract-item">
+          <a href="https://github.com/SolanaContracts/Escrow" target="_blank">Escrow</a>
+          <div class="contract-desc">Rust</div>
+        </div>
+        <div class="contract-item">
+          <a href="https://github.com/SolanaContracts/Voting-Dapp" target="_blank">Voting DApp</a>
+          <div class="contract-desc">TypeScript</div>
+        </div>
+        <div class="contract-item">
+          <a href="https://github.com/SolanaContracts/RWA-Contract" target="_blank">RWA Contract</a>
+          <div class="contract-desc">Carbon credit tokenization</div>
+        </div>
+        <div class="contract-item">
+          <a href="https://github.com/SolanaContracts/blueshift_anchor_escrow" target="_blank">Anchor Escrow</a>
+          <div class="contract-desc">Rust, Anchor</div>
+        </div>
+        <div class="contract-item">
+          <a href="https://github.com/SolanaContracts/cpi-lite-svm" target="_blank">CPI Lite SVM</a>
+          <div class="contract-desc">CPI without Anchor</div>
+        </div>
+        <div class="contract-item">
+          <a href="https://github.com/SolanaContracts/Cross-Program-Invocations" target="_blank">Cross-Program Invocations</a>
+          <div class="contract-desc">CPI in Anchor</div>
+        </div>
+        <div class="contract-item">
+          <a href="https://github.com/SolanaContracts/blueshift_anchor_vault" target="_blank">Anchor Vault</a>
+          <div class="contract-desc">Rust, Anchor</div>
+        </div>
+        <div class="contract-item">
+          <a href="https://github.com/SolanaContracts/hello-solana" target="_blank">Hello Solana</a>
+          <div class="contract-desc">First smart contract</div>
+        </div>
+        <div class="contract-item">
+          <a href="https://github.com/SolanaContracts/solana-native-counter" target="_blank">Native Counter</a>
+          <div class="contract-desc">Rust, native program</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <h2>Technical Skills</h2>
+      <dl class="skills-grid">
+        <dt>Languages</dt>
+        <dd>Rust, TypeScript, Python, JavaScript, Solidity, C</dd>
+        <dt>Frameworks</dt>
+        <dd>Django, React, FastAPI, Flask, Node.js, Tailwind CSS, Actix</dd>
+        <dt>DevOps / Cloud</dt>
+        <dd>Docker, AWS, Linux, GitHub Actions, Shell scripting, Firebase</dd>
+        <dt>Databases</dt>
+        <dd>PostgreSQL, MongoDB</dd>
+        <dt>Tools</dt>
+        <dd>Git, GitHub, VS Code, gRPC, Anchor, Yellowstone</dd>
+      </dl>
+    </section>
+
+    <!-- Achievements -->
+    <section>
+      <h2>Achievements</h2>
+      <ul class="achievements">
+        <li>Only contributor sent by <strong>Send AI</strong> to represent at <strong>Solana Breakpoint 2026</strong> in Abu Dhabi, UAE.</li>
+        <li>Directly invited as a <strong>Superteam India Member</strong>. Blog published on official <a class="content-link" href="https://blog.superteam.fun/p/indexing-on-solana" target="_blank">Superteam India Substack</a>.</li>
+        <li>13th <strong>AWS Cloud Captain</strong> in India from 1,146 applicants. Founded AWS Cloud Club KIET (80+ members), judged an AWS hackathon.</li>
+        <li>Contributed to <strong>OpenWISP</strong> (GSoC org), 16+ PRs on monitoring, health status logic, and Django migrations. <a class="content-link" href="https://gist.github.com/praptisharma28/0eb4311d3129989f1de5929d40feb28d" target="_blank">PR Gist</a></li>
+        <li>Won <strong>Innogeeks Winter of Code '24</strong>, 54 PRs merged, 40+ repositories. 195+ PRs merged overall on GitHub.</li>
+        <li>Top 6 for <strong>Smart India Hackathon 2024</strong>. Selected for <strong>Google Solution Challenge 2024</strong> among 4,000+ projects.</li>
+        <li>Selected for <strong>Solana Superteam Startup Village</strong> program in Ahmedabad.</li>
+        <li>Core Member at <a class="content-link" href="https://fosscu.org" target="_blank">FOSSCU</a>, a student-led community promoting open source globally.</li>
+      </ul>
+    </section>
+
+    <!-- Writing -->
+    <section>
+      <h2>Writing</h2>
+      <ul class="achievements">
+        <li><a class="content-link" href="https://blog.superteam.fun/p/indexing-on-solana" target="_blank">Indexing on Solana</a>, got published on Superteam India Substack</li>
+        <li><a class="content-link" href="https://medium.com/@praptii/understanding-dlmm-the-smarter-way-of-providing-liquidity-e9ffd3f6b136" target="_blank">Understanding DLMM</a>, the Smarter Way of Providing Liquidity</li>
+        <li><a class="content-link" href="https://medium.com/@praptii/diving-into-lazy-accounts-on-solana-my-pr-to-the-solana-ecosystem-4be306b64d56" target="_blank">Diving into Lazy Accounts on Solana</a></li>
+        <li><a class="content-link" href="https://medium.com/@praptii/solana-account-model-pdas-explained-754319582462" target="_blank">Solana Account Model &amp; PDAs Explained</a></li>
+        <li><a class="content-link" href="https://medium.com/@praptii/building-the-real-world-web-how-solana-powers-the-depin-revolution-ba2c5f9e93cb" target="_blank">How Solana Powers the DePIN Revolution</a></li>
+        <li><a class="content-link" href="https://medium.com/@praptii/traits-and-macros-in-rust-the-complete-beginner-to-advanced-guide-49426e97019f" target="_blank">Traits &amp; Macros in Rust: Beginner to Advanced</a></li>
+        <li><a class="content-link" href="https://medium.com/@praptii/why-choose-rust-over-javascript-d86fb250a4cc" target="_blank">Why Choose Rust Over JavaScript?</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      Prapti Sharma &middot; 2026
+    </footer>
+
+  </div>
+</body>
+</html>
