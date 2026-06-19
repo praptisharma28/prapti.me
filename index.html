@@ -144,6 +144,15 @@
     .entry { margin-bottom: 1.6rem; }
     .entry:last-child { margin-bottom: 0; }
 
+    /* Logo layout */
+    .entry-with-logo { display: flex; gap: 0.85rem; align-items: flex-start; }
+    .entry-logo { flex-shrink: 0; }
+    .entry-logo img { width: 42px; height: 42px; border-radius: 9px; object-fit: contain; border: 1px solid var(--border); background: #fff; padding: 4px; display: block; }
+    .entry-body { flex: 1; min-width: 0; }
+
+    /* Inline logos in achievements list */
+    .win-logo { width: 16px; height: 16px; border-radius: 3px; vertical-align: middle; margin-right: 0.35rem; object-fit: contain; border: 1px solid var(--border); background: #fff; display: inline-block; }
+
     .entry-header {
       display: flex;
       justify-content: space-between;
@@ -337,24 +346,51 @@
     <section>
       <h2>Experience</h2>
 
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Software Engineer, <a class="content-link" href="https://triton.one" target="_blank">Triton</a> (Solana RPC Provider)</span>
-          <span class="entry-meta">Dec 2025 &ndash; Present &middot; Remote</span>
+      <div class="entry entry-with-logo">
+        <div class="entry-logo">
+          <img src="https://logo.clearbit.com/triton.one" alt="Triton" width="42" height="42" onerror="this.style.visibility='hidden'">
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <span class="entry-title">Software Engineer, <a class="content-link" href="https://triton.one" target="_blank">Triton One</a></span>
+            <span class="entry-meta">Nov 2025 &ndash; Present &middot; Remote</span>
+          </div>
+          <div class="entry-subtitle">Full-time</div>
+          <ul>
+            <li>Building and supporting high-performance Solana infrastructure while troubleshooting customer issues, reproducing bugs, collaborating on escalations, and developing tooling in Rust, Python, and TypeScript.</li>
+          </ul>
         </div>
       </div>
 
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">AI Intern, <a class="content-link" href="https://www.linkedin.com/company/epsiloncreative/posts/?feedView=all" target="_blank">Epsilon Creative Agency</a></span>
-          <span class="entry-meta">Feb 2025 &ndash; Jun 2025 &middot; On-campus</span>
+      <div class="entry entry-with-logo">
+        <div class="entry-logo">
+          <img src="https://logo.clearbit.com/epsiloncreative.co" alt="Epsilon" width="42" height="42" onerror="this.style.visibility='hidden'">
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <span class="entry-title">AI Developer Intern, <a class="content-link" href="https://www.linkedin.com/company/epsiloncreative/posts/?feedView=all" target="_blank">Epsilon Creative Agency</a></span>
+            <span class="entry-meta">Mar 2025 &ndash; Jun 2025 &middot; Remote</span>
+          </div>
+          <div class="entry-subtitle">Internship</div>
+          <ul>
+            <li>Built AI-powered products leveraging LLMs, Stable Diffusion, and avatar-based systems.</li>
+          </ul>
         </div>
       </div>
 
-      <div class="entry">
-        <div class="entry-header">
-          <span class="entry-title">Back-End Developer, <a class="content-link" href="https://swyftin.com" target="_blank">Swyftin</a></span>
-          <span class="entry-meta">Dec 2024 &ndash; May 2025 &middot; Hybrid</span>
+      <div class="entry entry-with-logo">
+        <div class="entry-logo">
+          <img src="https://logo.clearbit.com/swyftin.com" alt="Swyftin" width="42" height="42" onerror="this.style.visibility='hidden'">
+        </div>
+        <div class="entry-body">
+          <div class="entry-header">
+            <span class="entry-title">Back-End Developer Intern, <a class="content-link" href="https://swyftin.com" target="_blank">Swyftin</a></span>
+            <span class="entry-meta">Nov 2024 &ndash; May 2025 &middot; Delhi, India &middot; Hybrid</span>
+          </div>
+          <div class="entry-subtitle">Internship</div>
+          <ul>
+            <li>Developed scalable backend services using Django/FastAPI, integrated third-party platforms.</li>
+          </ul>
         </div>
       </div>
 
@@ -502,14 +538,14 @@
     <section>
       <h2>A Few Wins</h2>
       <ul class="achievements">
-        <li>Only contributor sent by <strong>Send AI</strong> to represent at <strong>Solana Breakpoint 2025</strong> in Abu Dhabi, UAE.</li>
-        <li>Directly invited as a <strong>Superteam India Member</strong>. Blog published on official <a class="content-link" href="https://blog.superteam.fun/p/indexing-on-solana" target="_blank">Superteam India Substack</a>.</li>
-        <li>13th <strong>AWS Cloud Captain</strong> in India from 1,146 applicants. Founded AWS Cloud Club KIET (80+ members), judged an AWS hackathon.</li>
-        <li>Contributed to <strong>OpenWISP</strong> (GSoC org), 16+ PRs on monitoring, health status logic, and Django migrations. <a class="content-link" href="https://gist.github.com/praptisharma28/0eb4311d3129989f1de5929d40feb28d" target="_blank">PR Gist</a></li>
-        <li>Won <strong>Innogeeks Winter of Code '24</strong>, 54 PRs merged, 40+ repositories. 195+ PRs merged overall on GitHub.</li>
-        <li>Top 6 for <strong>Smart India Hackathon 2024</strong>. Selected for <strong>Google Solution Challenge 2024</strong> among 4,000+ projects.</li>
-        <li>Selected for <strong>Solana Superteam Startup Village</strong> program in Ahmedabad.</li>
-        <li>Core Member at <a class="content-link" href="https://fosscu.org" target="_blank">FOSSCU</a>, a student-led community promoting open source globally.</li>
+        <li><img src="https://logo.clearbit.com/solana.com" class="win-logo" alt="">Only contributor sent by <strong>Send AI</strong> to represent at <strong>Solana Breakpoint 2025</strong> in Abu Dhabi, UAE.</li>
+        <li><img src="https://logo.clearbit.com/superteam.fun" class="win-logo" alt="">Directly invited as a <strong>Superteam India Member</strong>. Blog published on official <a class="content-link" href="https://blog.superteam.fun/p/indexing-on-solana" target="_blank">Superteam India Substack</a>.</li>
+        <li><img src="https://logo.clearbit.com/aws.amazon.com" class="win-logo" alt="">13th <strong>AWS Cloud Captain</strong> in India from 1,146 applicants. Founded AWS Cloud Club KIET (80+ members), judged an AWS hackathon.</li>
+        <li><img src="https://logo.clearbit.com/openwisp.io" class="win-logo" alt="">Contributed to <strong>OpenWISP</strong> (GSoC org), 16+ PRs on monitoring, health status logic, and Django migrations. <a class="content-link" href="https://gist.github.com/praptisharma28/0eb4311d3129989f1de5929d40feb28d" target="_blank">PR Gist</a></li>
+        <li><img src="https://logo.clearbit.com/github.com" class="win-logo" alt="">Won <strong>Innogeeks Winter of Code '24</strong>, 54 PRs merged, 40+ repositories. 195+ PRs merged overall on GitHub.</li>
+        <li><img src="https://logo.clearbit.com/google.com" class="win-logo" alt="">Top 6 for <strong>Smart India Hackathon 2024</strong>. Selected for <strong>Google Solution Challenge 2024</strong> among 4,000+ projects.</li>
+        <li><img src="https://logo.clearbit.com/superteam.fun" class="win-logo" alt="">Selected for <strong>Solana Superteam Startup Village</strong> program in Ahmedabad.</li>
+        <li><img src="https://logo.clearbit.com/fosscu.org" class="win-logo" alt="">Core Member at <a class="content-link" href="https://fosscu.org" target="_blank">FOSSCU</a>, a student-led community promoting open source globally.</li>
       </ul>
     </section>
 
@@ -519,7 +555,7 @@
       <ul class="achievements">
         <li>Swimmer. First in the water, last out. It is the one thing that completely shuts my brain off.</li>
         <li>Pianist. Taught myself by ear. Not concert-ready, but good enough to lose an hour without noticing.</li>
-        <li>Verse and dohe. Hindi poetry, couplets, old verses that say everything in two lines. I was a school orator, always ranked first in speech competitions, and somewhere in all of that I fell in love with the weight a single line can carry.</li>
+        <li>Hindi verse and dohe. A school orator who fell in love with the weight a single line can carry. <a class="content-link" href="/poems">A few favourites.</a></li>
       </ul>
     </section>
 
