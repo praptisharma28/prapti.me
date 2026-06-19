@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jo Beet Gayi — Prapti</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Lora:ital,wght@0,400;1,400&family=Noto+Serif+Devanagari:wght@400;500&display=swap');
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --bg: #faf9f7; --text: #1a1a1a; --muted: #6b6b6b; --border: #e0ddd8; }
+    body { font-family: 'EB Garamond', Georgia, serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    body.show-hi .poem-text-en, body.show-hi .poem-title-en { display: none; }
+    body.show-en .poem-text-hi, body.show-en .poem-title-hi { display: none; }
+    .container { max-width: 660px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+    .lang-toggle { position: fixed; top: 1.3rem; right: 1.5rem; display: flex; background: #fff; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; z-index: 100; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+    .lang-toggle button { padding: 0.28rem 0.9rem; font-family: 'EB Garamond', serif; font-size: 0.9rem; border: none; background: transparent; color: var(--muted); cursor: pointer; transition: background 0.15s, color 0.15s; }
+    .lang-toggle button.active { background: var(--text); color: #fff; }
+    .back-link { display: inline-block; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-bottom: 1.5rem; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; }
+    .back-link:hover { color: var(--text); border-bottom-color: var(--text); }
+    .poem-title-hi { font-family: 'Noto Serif Devanagari', serif; font-size: 1.8rem; font-weight: 500; line-height: 1.3; margin-bottom: 0.2rem; }
+    .poem-title-en { font-family: 'Lora', Georgia, serif; font-size: 1.2rem; font-style: italic; color: #000; margin-bottom: 0.2rem; }
+    .poem-author { font-size: 0.82rem; color: var(--muted); margin-bottom: 2rem; }
+    .poem-rule { width: 2rem; height: 1px; background: var(--border); margin-bottom: 2rem; }
+    .poem-text-hi { font-family: 'Noto Serif Devanagari', serif; font-size: 1.05rem; line-height: 1.65; white-space: pre-line; color: #000; }
+    .poem-text-en { font-family: 'Lora', Georgia, serif; font-size: 1.02rem; font-style: italic; line-height: 1.65; color: #000; white-space: pre-line; }
+    footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body class="show-hi">
+  <div class="lang-toggle">
+    <button class="active" onclick="setLang('hi')">हिंदी</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
+  <div class="container">
+    <a class="back-link" href="/poems">&larr; Back to Poems</a>
+    <div class="poem-title-hi">जो बीत गई</div>
+    <div class="poem-title-en">Jo Beet Gayi</div>
+    <div class="poem-author">Harivansh Rai Bachchan</div>
+    <div class="poem-rule"></div>
+
+    <div class="poem-text-hi">जो बीत गई सो बात गई,
+जीवन में एक सितारा था,
+माना वह बेहद प्यारा था,
+वह डूब गया तो डूब गया।
+
+अम्बर के आनन को देखो,
+कितने इसके तारे टूटे,
+कितने इसके प्यारे छूटे,
+जो छूट गए फिर कहाँ मिले,
+पर बोलो टूटे तारों पर,
+कब अम्बर शोक मनाता है,
+जो बीत गई सो बात गई।
+
+जीवन में वह था एक कुसुम,
+थे उस पर नित्य निछावर तुम,
+वह सूख गया तो सूख गया।
+
+मधुवन की छाती को देखो,
+सूखी कितनी इसकी कलियाँ,
+मुरझाई कितनी वल्लरियाँ,
+जो मुरझाई फिर कहाँ खिलीं,
+पर बोलो सूखे फूलों पर,
+कब मधुवन शोर मचाता है,
+जो बीत गई सो बात गई।
+
+जीवन में मधु का प्याला था,
+तुमने तन मन दे डाला था,
+वह टूट गया तो टूट गया।
+
+मदिरालय का आँगन देखो,
+कितने प्याले हिल जाते हैं,
+गिर मिट्टी में मिल जाते हैं,
+जो गिरते हैं कब उठते हैं,
+पर बोलो टूटे प्यालों पर,
+कब मदिरालय पछताता है,
+जो बीत गई सो बात गई।
+
+मृदु मिट्टी के हैं बने हुए,
+मधु घट फूटा ही करते हैं,
+लघु जीवन लेकर आए हैं,
+प्याले टूटा ही करते हैं।
+
+फिर भी मदिरालय के अंदर,
+मधु के घट हैं मधु प्याले हैं,
+जो मादकता के मारे हैं,
+वे मधु लूटा ही करते हैं।
+
+वह कच्चा पीने वाला है,
+जिसकी ममता घट प्यालों पर,
+जो सच्चे मधु से जला हुआ,
+कब रोता है चिल्लाता है,
+जो बीत गई सो बात गई।</div>
+
+    <div class="poem-text-en">Jo beet gayi so baat gayi,
+Jeevan mein ek sitaara tha,
+Maana vah behad pyaara tha,
+Vah doob gaya to doob gaya.
+
+Ambar ke aanan ko dekho,
+Kitne iske taare toote,
+Kitne iske pyaare chhoote,
+Jo chhoot gaye phir kahaan mile,
+Par bolo toote taaron par,
+Kab ambar shok manaata hai,
+Jo beet gayi so baat gayi.
+
+Jeevan mein vah tha ek kusum,
+The us par nitya nichhaavar tum,
+Vah sookh gaya to sookh gaya.
+
+Madhuvan ki chaati ko dekho,
+Sookhi kitni iski kaliyan,
+Murjhaayi kitni vallariyan,
+Jo murjhaayi phir kahaan khilin,
+Par bolo sookhe phoolon par,
+Kab madhuvan shor machaata hai,
+Jo beet gayi so baat gayi.
+
+Jeevan mein madhu ka pyaala tha,
+Tumne tan man de daala tha,
+Vah toot gaya to toot gaya.
+
+Madiralay ka aangan dekho,
+Kitne pyaale hil jaate hain,
+Gir mitti mein mil jaate hain,
+Jo girte hain kab uthte hain,
+Par bolo toote pyaalon par,
+Kab madiralay pachtata hai,
+Jo beet gayi so baat gayi.
+
+Mridu mitti ke hain bane hue,
+Madhu ghat phoota hi karte hain,
+Laghu jeevan lekar aaye hain,
+Pyaale toota hi karte hain.
+
+Phir bhi madiralay ke andar,
+Madhu ke ghat hain madhu pyaale hain,
+Jo maadakta ke maare hain,
+Ve madhu loota hi karte hain.
+
+Vah kaccha peene wala hai,
+Jiski mamta ghat pyaalon par,
+Jo sacche madhu se jala hua,
+Kab rota hai chillaata hai,
+Jo beet gayi so baat gayi.</div>
+
+    <footer>Prapti Sharma &middot; 2026</footer>
+  </div>
+  <script>
+    function setLang(lang) {
+      document.body.className = lang === 'hi' ? 'show-hi' : 'show-en';
+      document.querySelectorAll('.lang-toggle button').forEach(function(b) {
+        b.classList.toggle('active', b.textContent.trim() === (lang === 'hi' ? 'हिंदी' : 'EN'));
+      });
+    }
+  </script>
+</body>
+</html>

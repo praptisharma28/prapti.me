@@ -88,10 +88,21 @@
     }
     .intro {
       font-size: 0.95rem;
-      color: var(--muted);
+      color: var(--text);
       font-style: italic;
       line-height: 1.85;
       max-width: 540px;
+    }
+
+    /* ── Side-by-side dohe ── */
+    .dohe-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 3rem;
+    }
+    .dohe-grid .poem-card { margin-bottom: 0; }
+    @media (max-width: 600px) {
+      .dohe-grid { grid-template-columns: 1fr; gap: 4rem 0; }
     }
 
     /* ── Poem index ── */
@@ -327,7 +338,7 @@ Veertva liye kuchh aur prakhar.
 
 Nas-nas mein tej pravaah liye,
 Kuchh aur naya utsaah liye.</div>
-      <a class="read-more" href="/poems/rashmirathi.html">Full poem &rarr;</a>
+      <a class="read-more" href="/poems/2">Full poem &rarr;</a>
     </article>
 
     <hr class="poem-sep">
@@ -408,6 +419,8 @@ Jo beet gayi so baat gayi.</div>
 
     <hr class="poem-sep">
 
+    <div class="dohe-grid">
+
     <!-- 06 -->
     <article class="poem-card" id="p6">
       <div class="poem-num">06</div>
@@ -445,8 +458,6 @@ Bada hua to kya hua, jaise ped khajoor.
 Panchhi ko chhaya nahin, phal laage ati door.</div>
     </article>
 
-    <hr class="poem-sep">
-
     <!-- 07 -->
     <article class="poem-card" id="p7">
       <div class="poem-num">07</div>
@@ -465,6 +476,8 @@ Toote se phir na jude, jude gaanth pad jaay.
 Rahiman paani raakhiye, bin paani sab soon.
 Paani gaye na oobre, moti maanush choon.</div>
     </article>
+
+    </div>
 
     <footer>Prapti Sharma &middot; 2026</footer>
 

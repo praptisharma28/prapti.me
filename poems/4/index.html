@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jhansi ki Rani — Prapti</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Lora:ital,wght@0,400;1,400&family=Noto+Serif+Devanagari:wght@400;500&display=swap');
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --bg: #faf9f7; --text: #1a1a1a; --muted: #6b6b6b; --border: #e0ddd8; }
+    body { font-family: 'EB Garamond', Georgia, serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    body.show-hi .poem-text-en, body.show-hi .poem-title-en { display: none; }
+    body.show-en .poem-text-hi, body.show-en .poem-title-hi { display: none; }
+    .container { max-width: 660px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+    .lang-toggle { position: fixed; top: 1.3rem; right: 1.5rem; display: flex; background: #fff; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; z-index: 100; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+    .lang-toggle button { padding: 0.28rem 0.9rem; font-family: 'EB Garamond', serif; font-size: 0.9rem; border: none; background: transparent; color: var(--muted); cursor: pointer; transition: background 0.15s, color 0.15s; }
+    .lang-toggle button.active { background: var(--text); color: #fff; }
+    .back-link { display: inline-block; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-bottom: 1.5rem; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; }
+    .back-link:hover { color: var(--text); border-bottom-color: var(--text); }
+    .poem-title-hi { font-family: 'Noto Serif Devanagari', serif; font-size: 1.8rem; font-weight: 500; line-height: 1.3; margin-bottom: 0.2rem; }
+    .poem-title-en { font-family: 'Lora', Georgia, serif; font-size: 1.2rem; font-style: italic; color: #000; margin-bottom: 0.2rem; }
+    .poem-author { font-size: 0.82rem; color: var(--muted); margin-bottom: 2rem; }
+    .poem-rule { width: 2rem; height: 1px; background: var(--border); margin-bottom: 2rem; }
+    .poem-text-hi { font-family: 'Noto Serif Devanagari', serif; font-size: 1.05rem; line-height: 1.65; white-space: pre-line; color: #000; }
+    .poem-text-en { font-family: 'Lora', Georgia, serif; font-size: 1.02rem; font-style: italic; line-height: 1.65; color: #000; white-space: pre-line; }
+    footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body class="show-hi">
+  <div class="lang-toggle">
+    <button class="active" onclick="setLang('hi')">हिंदी</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
+  <div class="container">
+    <a class="back-link" href="/poems">&larr; Back to Poems</a>
+    <div class="poem-title-hi">झाँसी की रानी</div>
+    <div class="poem-title-en">Jhansi ki Rani</div>
+    <div class="poem-author">Subhadra Kumari Chauhan</div>
+    <div class="poem-rule"></div>
+
+    <div class="poem-text-hi">सिंहासन हिल उठे, राजवंशों ने भृकुटी तानी थी,
+बूढ़े भारत में भी आई फिर से नई जवानी थी,
+गुमी हुई आज़ादी की क़ीमत सबने पहचानी थी,
+दूर फिरंगी को करने की सबने मन में ठानी थी,
+चमक उठी सन् सत्तावन में वह तलवार पुरानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+कानपूर के नाना की मुँहबोली बहन 'छबीली' थी,
+लक्ष्मीबाई नाम, पिता की वह संतान अकेली थी,
+नाना के संग पढ़ती थी वह, नाना के संग खेली थी,
+बरछी, ढाल, कृपाण, कटारी उसकी यही सहेली थी,
+वीर शिवाजी की गाथाएँ उसको याद ज़बानी थीं।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+लक्ष्मी थी या दुर्गा थी वह स्वयं वीरता की अवतार,
+देख मराठे पुलकित होते उसकी तलवारों के वार,
+नक़ली युद्ध, व्यूह की रचना और खेलना ख़ूब शिकार,
+सैन्य घेरना, दुर्ग तोड़ना, ये थे उसके प्रिय खिलवार,
+महाराष्ट्र-कुल-देवी उसकी भी आराध्य भवानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+हुई वीरता की वैभव के साथ सगाई झाँसी में,
+ब्याह हुआ रानी बन आई लक्ष्मीबाई झाँसी में,
+राजमहल में बजी बधाई ख़ुशियाँ छाईं झाँसी में,
+सुभट बुंदेलों की विरुदावलि-सी वह आई झाँसी में,
+चित्रा ने अर्जुन को पाया, शिव से मिली भवानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+उदित हुआ सौभाग्य, मुदित महलों में उजयाली छाई,
+किंतु कालगति चुपके-चुपके काली घटा घेर लाई,
+तीर चलानेवाले कर में उसे चूड़ियाँ कब भाईं,
+रानी विधवा हुई हाय! विधि को भी नहीं दया आई,
+निःसंतान मरे राजाजी रानी शोक-समानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+बुझा दीप झाँसी का तब डलहौज़ी मन में हरषाया,
+राज्य हड़प करने का उसने यह अच्छा अवसर पाया,
+फ़ौरन फ़ौजें भेज दुर्ग पर अपना झंडा फहराया,
+लावारिस का वारिस बनकर ब्रिटिश राज्य झाँसी आया,
+अश्रुपूर्ण रानी ने देखा झाँसी हुई बिरानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+अनुनय-विनय नहीं सुनता है, विकट फिरंगी की माया,
+व्यापारी बन दया चाहता था जब यह भारत आया,
+डलहौज़ी ने पैर पसारे अब तो पलट गई काया,
+राजाओं नव्वाबों को भी उसने पैरों ठुकराया,
+रानी दासी बनी, बनी यह दासी अब महरानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+छिनी राजधानी देहली की, लिया लखनऊ बातों-बात,
+क़ैद पेशवा था बिठूर में, हुआ नागपुर का भी घात,
+उदैपूर, तंजोर, सतारा, करनाटक की कौन बिसात,
+जबकि सिंध, पंजाब, ब्रह्म पर अभी हुआ था वज्र-निपात,
+बंगाले, मद्रास आदि की भी तो यही कहानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+रानी रोईं रनिवासों में बेगम ग़म से थीं बेज़ार,
+उनके गहने-कपड़े बिकते थे कलकत्ते के बाज़ार,
+सरे-आम नीलाम छापते थे अँग्रेज़ों के अख़बार,
+'नागपूर के जेवर ले लो' 'लखनऊ के लो नौलख हार',
+यों पर्दे की इज़्ज़त पर, देशी के हाथ बिकानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+कुटियों में थी विषम वेदना, महलों में आहत अपमान,
+वीर सैनिकों के मन में था, अपने पुरखों का अभिमान,
+नाना धुंधूपंत पेशवा जुटा रहा था सब सामान,
+बहिन छबीली ने रण-चंडी का कर दिया प्रकट आह्वान,
+हुआ यज्ञ प्रारंभ उन्हें तो सोयी ज्योति जगानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+महलों ने दी आग, झोंपड़ी ने ज्वाला सुलगाई थी,
+यह स्वतंत्रता की चिनगारी अंतरतम से आई थी,
+झाँसी चेती, दिल्ली चेती, लखनऊ लपटें छाई थीं,
+मेरठ, कानपूर, पटना ने भारी धूम मचाई थी,
+जबलपूर, कोल्हापुर में भी कुछ हलचल उकसानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+इस स्वतंत्रता-महायज्ञ में कई वीरवर आए काम,
+नाना धुंधूपंत, ताँतिया, चतुर अजीमुल्ला सरनाम,
+अहमद शाह मौलवी, ठाकुर कुँवरसिंह सैनिक अभिराम,
+भारत के इतिहास-गगन में अमर रहेंगे जिनके नाम,
+लेकिन आज ज़ुर्म कहलाती उनकी जो क़ुर्बानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+इनकी गाथा छोड़ चलें हम झाँसी के मैदानों में,
+जहाँ खड़ी है लक्ष्मीबाई मर्द बनी मर्दानों में,
+लेफ़्टिनेंट वॉकर आ पहुँचा, आगे बढ़ा जवानों में,
+रानी ने तलवार खींच ली, हुआ द्वंद्व असमानों में,
+ज़ख्मी होकर वॉकर भागा, उसे अजब हैरानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+रानी बढ़ी कालपी आई, कर सौ मील निरंतर पार,
+घोड़ा थककर गिरा भूमि पर, गया स्वर्ग तत्काल सिधार,
+यमुना-तट पर अँग्रेज़ों ने फिर खाई रानी से हार,
+विजयी रानी आगे चल दी, किया ग्वालियर पर अधिकार,
+अँग्रेज़ों के मित्र सिंधिया ने छोड़ी रजधानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+विजय मिली, पर अँग्रेज़ों की फिर सेना घिर आई थी,
+अबके जनरल स्मिथ सन्मुख था, उसने मुँह की खाई थी,
+काना और मंदरा सखियाँ रानी के सँग आई थीं,
+युद्ध क्षेत्र में उन दोनों ने भारी मार मचाई थी,
+पर, पीछे ह्यूरोज़ आ गया, हाय! घिरी अब रानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+तो भी रानी मार-काटकर चलती बनी सैन्य के पार,
+किंतु सामने नाला आया, था वह संकट विषम अपार,
+घोड़ा अड़ा, नया घोड़ा था, इतने में आ गए सवार,
+रानी एक, शत्रु बहुतेरे, होने लगे वार पर वार,
+घायल होकर गिरी सिंहनी उसे वीर-गति पानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+रानी गई सिधार, चिता अब उसकी दिव्य सवारी थी,
+मिला तेज़ से तेज़, तेज़ की वह सच्ची अधिकारी थी,
+अभी उम्र कुल तेइस की थी, मनुज नहीं अवतारी थी,
+हमको जीवित करने आई बन स्वतंत्रता नारी थी,
+दिखा गई पथ, सिखा गई हमको जो सीख सिखानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
+
+जाओ रानी याद रखेंगे हम कृतज्ञ भारतवासी,
+यह तेरा बलिदान जगावेगा स्वतंत्रता अविनाशी,
+होवे चुप इतिहास, लगे सच्चाई को चाहे फाँसी,
+हो मदमाती विजय, मिटा दे गोलों से चाहे झाँसी,
+तेरा स्मारक तू ही होगी, तू ख़ुद अमिट निशानी थी।
+बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
+ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥</div>
+
+    <div class="poem-text-en">Simhaasan hil uthe, raajvanshon ne bhrikuti taani thi,
+Boodhe Bharat mein bhi aayi phir se nai jawaani thi,
+Gumi hui aazaadi ki keemat sabne pehchaani thi,
+Door firangi ko karne ki sabne man mein thaani thi,
+Chamak uthi san sattavan mein vah talvaar puraani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Kanpur ke Nana ki munhboli bahan "Chhabili" thi,
+Lakshmibai naam, pita ki vah santaan akeli thi,
+Nana ke sang padhti thi vah, Nana ke sang kheli thi,
+Barchhi, dhaal, kripaan, kataari uski yahi saheli thi,
+Veer Shivaji ki gaathaayen usko yaad zubaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Lakshmi thi ya Durga thi vah swayam veerta ki avataar,
+Dekh Marathe pulakit hote uski talvaaron ke vaar,
+Nakli yuddh, vyuh ki rachna aur khelna khoob shikaar,
+Sainya gherna, durg todna, ye the uske priya khilvaar,
+Maharashtra-kul-devi uski bhi aaradhya Bhavani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Hui veerta ki vaibhav ke saath sagai Jhansi mein,
+Byaah hua Rani ban aayi Lakshmibai Jhansi mein,
+Rajmahal mein baji badhaai khushiyaan chhaain Jhansi mein,
+Subhat Bundhelon ki virudaavali-si vah aayi Jhansi mein,
+Chitra ne Arjun ko paaya, Shiv se mili Bhavani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Udit hua saubhaagya, mudit mahalon mein ujyaali chhaai,
+Kintu kaalgati chupke-chupke kaali ghata gher laayi,
+Teer chalaanewale kar mein use choodiyan kab bhaayin,
+Rani vidhwa hui haay! Vidhi ko bhi nahin daya aayi,
+Nissantaan mare Raajaji Rani shok-samaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Bujha deep Jhansi ka tab Dalhousie man mein harshaya,
+Rajya hadap karne ka usne yah achha avasar paaya,
+Fauran faujen bhej durg par apna jhanda fahraaya,
+Laavaaris ka vaaris bankar British Rajya Jhansi aaya,
+Ashrupurn Rani ne dekha Jhansi hui biraani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Anunay-vinay nahin sunta hai, vikat firangi ki maaya,
+Vyaapari ban daya chahta tha jab yah Bharat aaya,
+Dalhousie ne pair pasaare ab to palat gayi kaaya,
+Rajaon navabon ko bhi usne pairon thukraaya,
+Rani daasi bani, bani yah daasi ab maharaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Chhini rajdhaani Dehli ki, liya Lucknow baaton-baat,
+Qaid Peshwa tha Bithur mein, hua Nagpur ka bhi ghaat,
+Udaipur, Tanjore, Satara, Karnataka ki kaun bisaat,
+Jabki Sindh, Punjab, Brahm par abhi hua tha vajra-nipaat,
+Bangale, Madras aadi ki bhi to yahi kahaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Rani roin ranivaason mein Begum gham se thin bezaar,
+Unke gehne-kapde bikte the Kalkatte ke baazaar,
+Sare-aam neelaim chhaapte the Angrezon ke akhbaar,
+"Nagpur ke zevar le lo" "Lucknow ke lo naulakh haar",
+Yon parde ki izzat par, deshi ke haath bikaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Kutiyon mein thi visham vedna, mahalon mein aahat apmaan,
+Veer sainikon ke man mein tha, apne purukhon ka abhimaan,
+Nana Dhundhupant Peshwa juta raha tha sab saamaan,
+Bahan Chhabili ne ran-Chandi ka kar diya prakat aahvaan,
+Hua yagya praarambh unhen to soyi jyoti jagaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Mahalon ne di aag, jhonpdi ne jwaala sulagaai thi,
+Yah swatantrata ki chingaari antartam se aayi thi,
+Jhansi cheti, Dilli cheti, Lucknow lapten chhaai thin,
+Meerut, Kanpur, Patna ne bhaari dhoom machaai thi,
+Jabalpur, Kolhapur mein bhi kuchh halchal uksaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Is swatantrata-mahayagya mein kai veervar aaye kaam,
+Nana Dhundhupant, Tantiya, chatur Azimullah sarnam,
+Ahmad Shah Maulvi, Thakur Kunwarsingh sainik abhiraam,
+Bharat ke itihas-gagan mein amar rahenge jinke naam,
+Lekin aaj jurm kahlaati unki jo qurbaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Inki gaatha chhod chalen hum Jhansi ke maidaanon mein,
+Jahaan khadi hai Lakshmibai mard bani mardaanon mein,
+Lieutenant Walker aa pahuncha, aage badha jawaanon mein,
+Rani ne talvaar khench li, hua dvandv asamaanon mein,
+Zakhmi hokar Walker bhaaga, use ajab hairaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Rani badhi Kalpi aayi, kar sau mil nirantar paar,
+Ghoda thakkar gira bhoomi par, gaya swarg tatkal sidhaar,
+Yamuna-tat par Angrezon ne phir khaai Rani se haar,
+Vijayi Rani aage chal di, kiya Gwalior par adhikaar,
+Angrezon ke mitra Scindia ne chhhodi rajdhaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Vijay mili, par Angrezon ki phir sena ghir aayi thi,
+Abke General Smith sanmukh tha, usne munh ki khaayi thi,
+Kaana aur Mandra sakhiyaan Rani ke sang aayi thin,
+Yuddh kshetra mein un donon ne bhaari maar machaai thi,
+Par, peechhe Huyrose aa gaya, haay! ghiri ab Rani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+To bhi Rani maar-kaatkar chalti bani sainya ke paar,
+Kintu saamne naala aaya, tha vah sankat visham apaar,
+Ghoda ada, naya ghoda tha, itne mein aa gaye savaar,
+Rani ek, shatru bahutere, hone lage vaar par vaar,
+Ghaayal hokar giri singhaani use veer-gati paani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Rani gayi sidhaar, chita ab uski divya savaari thi,
+Mila tej se tej, tej ki vah sachchi adhikaari thi,
+Abhi umra kul teis ki thi, manuj nahin avataari thi,
+Hamko jeevit karne aayi ban swatantrata naari thi,
+Dikha gayi path, sikha gayi hamko jo seekh sikhaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.
+
+Jaao Rani yaad rakhenge hum kritagna Bharatvaasi,
+Yah tera balidaan jagaavega swatantrata avinaashi,
+Hove chup itihaas, lage sachchaai ko chaahe phaansi,
+Ho madmaati vijay, mita de golon se chaahe Jhansi,
+Tera smarak tu hi hogi, tu khud amit nishaani thi.
+Bundele harbolon ke munh humne suni kahaani thi.
+Khoob ladi mardaani vah to Jhansi wali Rani thi.</div>
+
+    <footer>Prapti Sharma &middot; 2026</footer>
+  </div>
+  <script>
+    function setLang(lang) {
+      document.body.className = lang === 'hi' ? 'show-hi' : 'show-en';
+      document.querySelectorAll('.lang-toggle button').forEach(function(b) {
+        b.classList.toggle('active', b.textContent.trim() === (lang === 'hi' ? 'हिंदी' : 'EN'));
+      });
+    }
+  </script>
+</body>
+</html>

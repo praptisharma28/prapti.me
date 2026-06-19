@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pandrah Agast — Prapti</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Lora:ital,wght@0,400;1,400&family=Noto+Serif+Devanagari:wght@400;500&display=swap');
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --bg: #faf9f7; --text: #1a1a1a; --muted: #6b6b6b; --border: #e0ddd8; }
+    body { font-family: 'EB Garamond', Georgia, serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    body.show-hi .poem-text-en, body.show-hi .poem-title-en { display: none; }
+    body.show-en .poem-text-hi, body.show-en .poem-title-hi { display: none; }
+    .container { max-width: 660px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+    .lang-toggle { position: fixed; top: 1.3rem; right: 1.5rem; display: flex; background: #fff; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; z-index: 100; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+    .lang-toggle button { padding: 0.28rem 0.9rem; font-family: 'EB Garamond', serif; font-size: 0.9rem; border: none; background: transparent; color: var(--muted); cursor: pointer; transition: background 0.15s, color 0.15s; }
+    .lang-toggle button.active { background: var(--text); color: #fff; }
+    .back-link { display: inline-block; font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-bottom: 1.5rem; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; }
+    .back-link:hover { color: var(--text); border-bottom-color: var(--text); }
+    .poem-title-hi { font-family: 'Noto Serif Devanagari', serif; font-size: 1.8rem; font-weight: 500; line-height: 1.3; margin-bottom: 0.2rem; }
+    .poem-title-en { font-family: 'Lora', Georgia, serif; font-size: 1.2rem; font-style: italic; color: #000; margin-bottom: 0.2rem; }
+    .poem-author { font-size: 0.82rem; color: var(--muted); margin-bottom: 2rem; }
+    .poem-rule { width: 2rem; height: 1px; background: var(--border); margin-bottom: 2rem; }
+    .poem-text-hi { font-family: 'Noto Serif Devanagari', serif; font-size: 1.05rem; line-height: 1.65; white-space: pre-line; color: #000; }
+    .poem-text-en { font-family: 'Lora', Georgia, serif; font-size: 1.02rem; font-style: italic; line-height: 1.65; color: #000; white-space: pre-line; }
+    footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body class="show-hi">
+  <div class="lang-toggle">
+    <button class="active" onclick="setLang('hi')">हिंदी</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
+  <div class="container">
+    <a class="back-link" href="/poems">&larr; Back to Poems</a>
+    <div class="poem-title-hi">पंद्रह अगस्त का दिन कहता</div>
+    <div class="poem-title-en">Pandrah Agast ka din kehta</div>
+    <div class="poem-author">Atal Bihari Vajpayee</div>
+    <div class="poem-rule"></div>
+
+    <div class="poem-text-hi">पंद्रह अगस्त का दिन कहता:
+आज़ादी अभी अधूरी है।
+सपने सच होने बाकी है,
+रावी की शपथ न पूरी है॥
+
+जिनकी लाशों पर पग धर कर
+आज़ादी भारत में आई,
+वे अब तक हैं खानाबदोश
+ग़म की काली बदली छाई॥
+
+कलकत्ते के फुटपाथों पर
+जो आँधी-पानी सहते हैं।
+उनसे पूछो, पंद्रह अगस्त के
+बारे में क्या कहते हैं॥
+
+हिंदू के नाते उनका दु:ख
+सुनते यदि तुम्हें लाज आती।
+तो सीमा के उस पार चलो
+सभ्यता जहाँ कुचली जाती॥
+
+इंसान जहाँ बेचा जाता,
+ईमान ख़रीदा जाता है।
+इस्लाम सिसकियाँ भरता है,
+डालर मन में मुस्काता है॥
+
+भूखों को गोली नंगों को
+हथियार पिन्हाए जाते हैं।
+सूखे कंठों से जेहादी
+नारे लगवाए जाते हैं॥
+
+लाहौर, कराची, ढाका पर
+मातम की है काली छाया।
+पख्तूनों पर, गिलगित पर है
+ग़मगीन गुलामी का साया॥
+
+बस इसीलिए तो कहता हूँ
+आज़ादी अभी अधूरी है।
+कैसे उल्लास मनाऊँ मैं?
+थोड़े दिन की मजबूरी है॥
+
+दिन दूर नहीं खंडित भारत को
+पुन: अखंड बनाएँगे।
+गिलगित से गारो पर्वत तक
+आज़ादी पर्व मनाएँगे॥
+
+उस स्वर्ण दिवस के लिए आज से
+कमर कसें बलिदान करें।
+जो पाया उसमें खो न जाएँ,
+जो खोया उसका ध्यान करें॥</div>
+
+    <div class="poem-text-en">Pandrah Agast ka din kehta:
+Aazaadi abhi adhoori hai.
+Sapne sach hone baaki hain,
+Raavi ki shapath na poori hai.
+
+Jinki laashon par pag dhar kar
+Aazaadi Bharat mein aayi,
+Ve ab tak hain khanabadosh,
+Gham ki kaali badli chhaayi.
+
+Kalkatte ke footpathon par
+Jo aandhi-paani sahte hain.
+Unse poocho, Pandrah Agast ke
+Baare mein kya kehte hain.
+
+Hindu ke naate unka dukh
+Sunte yadi tumhen laaj aati.
+To seema ke us paar chalo
+Sabhyata jahaan kuchli jaati.
+
+Insaan jahaan becha jaata,
+Imaan khareeda jaata hai.
+Islam siskiyan bharta hai,
+Dollar man mein muskaata hai.
+
+Bhookhon ko goli nangon ko
+Hathiyaar pinhaaye jaate hain.
+Sookhe kanthon se jehaadi
+Naare lagvaaye jaate hain.
+
+Lahore, Karachi, Dhaka par
+Maatam ki hai kaali chhaaya.
+Pakhtoonon par, Gilgit par hai
+Ghamgeen gulaami ka saaya.
+
+Bas isiliye to kehta hoon
+Aazaadi abhi adhoori hai.
+Kaise ullaas manaaoon main?
+Thode din ki majboori hai.
+
+Din door nahin khandit Bharat ko
+Punah akhand banaayenge.
+Gilgit se Garo parvat tak
+Aazaadi parv manaayenge.
+
+Us swarn divas ke liye aaj se
+Kamar kasen balidaan karen.
+Jo paaya usmein kho na jaayen,
+Jo khoya uska dhyaan karen.</div>
+
+    <footer>Prapti Sharma &middot; 2026</footer>
+  </div>
+  <script>
+    function setLang(lang) {
+      document.body.className = lang === 'hi' ? 'show-hi' : 'show-en';
+      document.querySelectorAll('.lang-toggle button').forEach(function(b) {
+        b.classList.toggle('active', b.textContent.trim() === (lang === 'hi' ? 'हिंदी' : 'EN'));
+      });
+    }
+  </script>
+</body>
+</html>
