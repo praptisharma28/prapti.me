@@ -169,9 +169,19 @@
       font-family: 'Lora', Georgia, serif;
       font-size: 1.08rem;
       font-style: italic;
-      color: var(--muted);
+      color: #000;
       margin-bottom: 0.45rem;
     }
+    .read-more {
+      display: inline-block;
+      margin-top: 1.4rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .read-more:hover { color: var(--text); border-bottom-color: var(--text); }
     .poem-author {
       font-size: 0.8rem;
       color: var(--muted);
@@ -187,15 +197,16 @@
     .poem-text-hi {
       font-family: 'Noto Serif Devanagari', serif;
       font-size: 1.05rem;
-      line-height: 2.2;
+      line-height: 1.65;
       white-space: pre-line;
+      color: #000;
     }
     .poem-text-en {
       font-family: 'Lora', Georgia, serif;
       font-size: 1.02rem;
       font-style: italic;
-      line-height: 2.15;
-      color: #3a3a3a;
+      line-height: 1.65;
+      color: #000;
       white-space: pre-line;
     }
 
@@ -240,7 +251,7 @@
     <header>
       <a class="back-link" href="/">&larr; Prapti Sharma</a>
       <h1>Poems</h1>
-      <p class="intro">I was an orator through school — always ranked first in speech competitions, crafting slogans and weaving poems into every address. Somewhere in all that, I fell in love with verse. These are the ones I return to when things get hard.</p>
+      <p class="intro">I was an orator through school - always ranked first in speech competitions, crafting slogans and weaving poems into every address. Somewhere in all that, I fell in love with verse. These are the ones I return to when things get hard.</p>
     </header>
 
     <nav class="poem-index">
@@ -298,8 +309,8 @@ Geet naya gata hoon</div>
     <!-- 02 -->
     <article class="poem-card" id="p2">
       <div class="poem-num">02</div>
-      <div class="poem-title-hi">रश्मिरथी — कृष्ण–दुर्योधन संवाद</div>
-      <div class="poem-title-en">Rashmirathi — Krishna–Duryodhan Samvad</div>
+      <div class="poem-title-hi">रश्मिरथी: कृष्ण-दुर्योधन संवाद</div>
+      <div class="poem-title-en">Rashmirathi: Krishna-Duryodhan Samvad</div>
       <div class="poem-author">Ramdhari Singh Dinkar</div>
       <div class="poem-rule"></div>
       <div class="poem-text-hi">हो गया पूर्ण अज्ञातवास,
@@ -308,158 +319,15 @@ Geet naya gata hoon</div>
 वीरत्व लिये कुछ और प्रखर।
 
 नस­नस में तेज प्रवाह लिये,
-कुछ और नया उत्साह लिये।
-
-बरसों तक बन में घूम घूम,
-बाधा वृक्षों को चूम चूम,
-सह धूप घाम पानी पत्थर,
-पांडव आये कुछ और निखर।
-
-सौभाग्य न हर दिन सोता है,
-देखें आगे क्या होता है?
-
-मैत्री की राह बताने को,
-सबको सुमार्ग पर लाने को,
-दुर्योधन को समझाने को,
-भीषण विध्वंस बचाने को।
-
-भगवान हस्तिनापुर आये,
-पंडव का संदेशा लाये।
-
-दो न्याय अगर तो आधा दो,
-पर इसमे भी यदि बाधा हो,
-तो दे दो केवल पांच ग्राम,
-रक्खो अपनी धरती तमाम।
-
-हम वही खुशी से खाएंगे,
-परिजन पर असि न उठाएंगे।
-
-दुर्योधन वह भी दे न सका,
-आशिश समाज की ले न सका,
-उलटे, हरि को बांधने चला,
-जो था असध्य, साधने चला।
-
-जब नाश मनुज पर छाता है,
-पहले विवेक मर जाता है।
-
-हरि ने भीषण हुंकार किया,
-अपना स्वरूप विस्तार किया,
-डगमग डगमग दिग्गज डोले,
-भगवान कुपित हो कर बोले —
-
-जंजीर बढ़ा अब साध मुझे,
-हां­हां दुर्योधन! बांध मुझे।
-
-हित­वचन नहीं तूने माना,
-मैत्री का मूल्य न पहचाना,
-तो ले मैं भी अब जाता हूं,
-अंतिम संदेश सुनाता हूं।
-
-याचना नहीं अब रण होगा,
-जीवन जय या कि मरण होगा।
-
-टकरायेंगे नक्षत्र निकर,
-बरसेगी भू पर वहनि प्रखर,
-फण शेषनाग का डोलेगा,
-विकराल काल मुंह खोलेगा।
-
-दुर्योधन! रण ऐसा होगा,
-फिर कभी नहीं वैसा होगा।
-
-भाई पर भाई टूटेंगे,
-विष बाण बूंद से छूटेंगे,
-सौभाग्य मनुज के फूटेंगे,
-वायस श्रगाल सुख लूटेंगे।
-
-आखिर तू भूशायी होगा,
-हिंसा का पर, दाई होगा।
-
-थी सभा सन्न सब लोग डरे,
-या चुप थे या बेहोश पड़े।
-केवल दो नर न अगाते थे,
-धृतराष्ट्र विदुर सुख पाते थे।
-
-कर जोड़ खड़े प्रमुदित निर्भय,
-दोनो पुकारते थे 'जय­जय!'</div>
+कुछ और नया उत्साह लिये।</div>
       <div class="poem-text-en">Ho gaya poorn agyaatvaas,
 Paandav laute van se sahaas,
 Paavak mein kanak sadrish tap kar,
 Veertva liye kuchh aur prakhar.
 
 Nas-nas mein tej pravaah liye,
-Kuchh aur naya utsaah liye.
-
-Barson tak ban mein ghoom ghoom,
-Baadha vrikshon ko choom choom,
-Sah dhoop ghaam paani patthar,
-Paandav aaye kuchh aur nikhar.
-
-Saubhaagya na har din sota hai,
-Dekhen aage kya hota hai?
-
-Maitri ki raah bataane ko,
-Sabko sumaarg par laane ko,
-Duryodhan ko samjhaane ko,
-Bheeshan vidhvans bachaane ko.
-
-Bhagwaan Hastinapur aaye,
-Paandav ka sandesha laaye.
-
-Do nyaay agar to aadha do,
-Par isme bhi yadi baadha ho,
-To de do keval paanch graam,
-Rakkho apni dharti tamaam.
-
-Hum vahi khushi se khaayenge,
-Parijan par asi na uthaayenge.
-
-Duryodhan vah bhi de na saka,
-Aashish samaaj ki le na saka,
-Ulate, Hari ko baandhne chala,
-Jo tha asaadhya, saadhne chala.
-
-Jab naash manuj par chhaata hai,
-Pehle vivek mar jaata hai.
-
-Hari ne bheeshan hunkaar kiya,
-Apna swaroop vistaar kiya,
-Dagmag dagmag diggaj dole,
-Bhagwaan kupit ho kar bole—
-
-Janjeer badha ab saadh mujhe,
-Haan-haan Duryodhan! baandh mujhe.
-
-Hit-vachan nahin tune maana,
-Maitri ka moolya na pehchaana,
-To le main bhi ab jaata hoon,
-Antim sandesh sunaata hoon.
-
-Yaachana nahin ab ran hoga,
-Jeevan jay ya ki maran hoga.
-
-Takraayenge nakshatra nikar,
-Barsegi bhoo par vahni prakhar,
-Phan Sheshnaag ka dolega,
-Vikaraal kaal munh kholega.
-
-Duryodhan! ran aisa hoga,
-Phir kabhi nahin vaisa hoga.
-
-Bhaai par bhaai tootenge,
-Vish baan boond se chhootenge,
-Saubhaagya manuj ke phootenge,
-Vaayas shrigaal sukh lootenge.
-
-Aakhir tu bhooshaayi hoga,
-Hinsa ka par, daayi hoga.
-
-Thi sabha sann sab log dare,
-Ya chup the ya behosh pade.
-Keval do nar na aghaate the,
-Dhritarashtra Vidur sukh paate the.
-
-Kar jod khade pramudit nirbhay,
-Dono pukaarte the "Jai-Jai!"</div>
+Kuchh aur naya utsaah liye.</div>
+      <a class="read-more" href="/poems/rashmirathi.html">Full poem &rarr;</a>
     </article>
 
     <hr class="poem-sep">
@@ -474,101 +342,12 @@ Dono pukaarte the "Jai-Jai!"</div>
       <div class="poem-text-hi">पंद्रह अगस्त का दिन कहता:
 आज़ादी अभी अधूरी है।
 सपने सच होने बाकी है,
-रावी की शपथ न पूरी है॥
-
-जिनकी लाशों पर पग धर कर
-आज़ादी भारत में आई,
-वे अब तक हैं खानाबदोश
-ग़म की काली बदली छाई॥
-
-कलकत्ते के फुटपाथों पर
-जो आँधी-पानी सहते हैं।
-उनसे पूछो, पंद्रह अगस्त के
-बारे में क्या कहते हैं॥
-
-हिंदू के नाते उनका दु:ख
-सुनते यदि तुम्हें लाज आती।
-तो सीमा के उस पार चलो
-सभ्यता जहाँ कुचली जाती॥
-
-इंसान जहाँ बेचा जाता,
-ईमान ख़रीदा जाता है।
-इस्लाम सिसकियाँ भरता है,
-डालर मन में मुस्काता है॥
-
-भूखों को गोली नंगों को
-हथियार पिन्हाए जाते हैं।
-सूखे कंठों से जेहादी
-नारे लगवाए जाते हैं॥
-
-लाहौर, कराची, ढाका पर
-मातम की है काली छाया।
-पख्तूनों पर, गिलगित पर है
-ग़मगीन गुलामी का साया॥
-
-बस इसीलिए तो कहता हूँ
-आज़ादी अभी अधूरी है।
-कैसे उल्लास मनाऊँ मैं?
-थोड़े दिन की मजबूरी है॥
-
-दिन दूर नहीं खंडित भारत को
-पुन: अखंड बनाएँगे।
-गिलगित से गारो पर्वत तक
-आज़ादी पर्व मनाएँगे॥
-
-उस स्वर्ण दिवस के लिए आज से
-कमर कसें बलिदान करें।
-जो पाया उसमें खो न जाएँ,
-जो खोया उसका ध्यान करें॥</div>
+रावी की शपथ न पूरी है॥</div>
       <div class="poem-text-en">Pandrah Agast ka din kehta:
 Aazaadi abhi adhoori hai.
 Sapne sach hone baaki hain,
-Raavi ki shapath na poori hai.
-
-Jinki laashon par pag dhar kar
-Aazaadi Bharat mein aayi,
-Ve ab tak hain khanabadosh,
-Gham ki kaali badli chhaayi.
-
-Kalkatte ke footpathon par
-Jo aandhi-paani sahte hain.
-Unse poocho, Pandrah Agast ke
-Baare mein kya kehte hain.
-
-Hindu ke naate unka dukh
-Sunte yadi tumhen laaj aati.
-To seema ke us paar chalo
-Sabhyata jahaan kuchli jaati.
-
-Insaan jahaan becha jaata,
-Imaan khareeda jaata hai.
-Islam siskiyan bharta hai,
-Dollar man mein muskaata hai.
-
-Bhookhon ko goli nangon ko
-Hathiyaar pinhaaye jaate hain.
-Sookhe kanthon se jehaadi
-Naare lagvaaye jaate hain.
-
-Lahore, Karachi, Dhaka par
-Maatam ki hai kaali chhaaya.
-Pakhtoonon par, Gilgit par hai
-Ghamgeen gulaami ka saaya.
-
-Bas isiliye to kehta hoon
-Aazaadi abhi adhoori hai.
-Kaise ullaas manaaoon main?
-Thode din ki majboori hai.
-
-Din door nahin khandit Bharat ko
-Punah akhand banaayenge.
-Gilgit se Garo parvat tak
-Aazaadi parv manaayenge.
-
-Us swarn divas ke liye aaj se
-Kamar kasen balidaan karen.
-Jo paaya usmein kho na jaayen,
-Jo khoya uska dhyaan karen.</div>
+Raavi ki shapath na poori hai.</div>
+      <a class="read-more" href="/poems/pandrah-agast.html">Full poem &rarr;</a>
     </article>
 
     <hr class="poem-sep">
@@ -586,142 +365,6 @@ Jo khoya uska dhyaan karen.</div>
 दूर फिरंगी को करने की सबने मन में ठानी थी,
 चमक उठी सन् सत्तावन में वह तलवार पुरानी थी।
 बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-कानपूर के नाना की मुँहबोली बहन 'छबीली' थी,
-लक्ष्मीबाई नाम, पिता की वह संतान अकेली थी,
-नाना के संग पढ़ती थी वह, नाना के संग खेली थी,
-बरछी, ढाल, कृपाण, कटारी उसकी यही सहेली थी,
-वीर शिवाजी की गाथाएँ उसको याद ज़बानी थीं।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-लक्ष्मी थी या दुर्गा थी वह स्वयं वीरता की अवतार,
-देख मराठे पुलकित होते उसकी तलवारों के वार,
-नक़ली युद्ध, व्यूह की रचना और खेलना ख़ूब शिकार,
-सैन्य घेरना, दुर्ग तोड़ना, ये थे उसके प्रिय खिलवार,
-महाराष्ट्र-कुल-देवी उसकी भी आराध्य भवानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-हुई वीरता की वैभव के साथ सगाई झाँसी में,
-ब्याह हुआ रानी बन आई लक्ष्मीबाई झाँसी में,
-राजमहल में बजी बधाई ख़ुशियाँ छाईं झाँसी में,
-सुभट बुंदेलों की विरुदावलि-सी वह आई झाँसी में,
-चित्रा ने अर्जुन को पाया, शिव से मिली भवानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-उदित हुआ सौभाग्य, मुदित महलों में उजयाली छाई,
-किंतु कालगति चुपके-चुपके काली घटा घेर लाई,
-तीर चलानेवाले कर में उसे चूड़ियाँ कब भाईं,
-रानी विधवा हुई हाय! विधि को भी नहीं दया आई,
-निःसंतान मरे राजाजी रानी शोक-समानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-बुझा दीप झाँसी का तब डलहौज़ी मन में हरषाया,
-राज्य हड़प करने का उसने यह अच्छा अवसर पाया,
-फ़ौरन फ़ौजें भेज दुर्ग पर अपना झंडा फहराया,
-लावारिस का वारिस बनकर ब्रिटिश राज्य झाँसी आया,
-अश्रुपूर्ण रानी ने देखा झाँसी हुई बिरानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-अनुनय-विनय नहीं सुनता है, विकट फिरंगी की माया,
-व्यापारी बन दया चाहता था जब यह भारत आया,
-डलहौज़ी ने पैर पसारे अब तो पलट गई काया,
-राजाओं नव्वाबों को भी उसने पैरों ठुकराया,
-रानी दासी बनी, बनी यह दासी अब महरानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-छिनी राजधानी देहली की, लिया लखनऊ बातों-बात,
-क़ैद पेशवा था बिठूर में, हुआ नागपुर का भी घात,
-उदैपूर, तंजोर, सतारा, करनाटक की कौन बिसात,
-जबकि सिंध, पंजाब, ब्रह्म पर अभी हुआ था वज्र-निपात,
-बंगाले, मद्रास आदि की भी तो यही कहानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-रानी रोईं रनिवासों में बेगम ग़म से थीं बेज़ार,
-उनके गहने-कपड़े बिकते थे कलकत्ते के बाज़ार,
-सरे-आम नीलाम छापते थे अँग्रेज़ों के अख़बार,
-'नागपूर के जेवर ले लो' 'लखनऊ के लो नौलख हार',
-यों पर्दे की इज़्ज़त पर— देशी के हाथ बिकानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-कुटियों में थी विषम वेदना, महलों में आहत अपमान,
-वीर सैनिकों के मन में था, अपने पुरखों का अभिमान,
-नाना धुंधूपंत पेशवा जुटा रहा था सब सामान,
-बहिन छबीली ने रण-चंडी का कर दिया प्रकट आह्वान,
-हुआ यज्ञ प्रारंभ उन्हें तो सोयी ज्योति जगानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-महलों ने दी आग, झोंपड़ी ने ज्वाला सुलगाई थी,
-यह स्वतंत्रता की चिनगारी अंतरतम से आई थी,
-झाँसी चेती, दिल्ली चेती, लखनऊ लपटें छाई थीं,
-मेरठ, कानपूर, पटना ने भारी धूम मचाई थी,
-जबलपूर, कोल्हापुर में भी कुछ हलचल उकसानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-इस स्वतंत्रता-महायज्ञ में कई वीरवर आए काम,
-नाना धुंधूपंत, ताँतिया, चतुर अजीमुल्ला सरनाम,
-अहमद शाह मौलवी, ठाकुर कुँवरसिंह सैनिक अभिराम,
-भारत के इतिहास-गगन में अमर रहेंगे जिनके नाम,
-लेकिन आज ज़ुर्म कहलाती उनकी जो क़ुर्बानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-इनकी गाथा छोड़ चलें हम झाँसी के मैदानों में,
-जहाँ खड़ी है लक्ष्मीबाई मर्द बनी मर्दानों में,
-लेफ़्टिनेंट वॉकर आ पहुँचा, आगे बढ़ा जवानों में,
-रानी ने तलवार खींच ली, हुआ द्वंद्व असमानों में,
-ज़ख्मी होकर वॉकर भागा, उसे अजब हैरानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-रानी बढ़ी कालपी आई, कर सौ मील निरंतर पार,
-घोड़ा थककर गिरा भूमि पर, गया स्वर्ग तत्काल सिधार,
-यमुना-तट पर अँग्रेज़ों ने फिर खाई रानी से हार,
-विजयी रानी आगे चल दी, किया ग्वालियर पर अधिकार,
-अँग्रेज़ों के मित्र सिंधिया ने छोड़ी रजधानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-विजय मिली, पर अँग्रेज़ों की फिर सेना घिर आई थी,
-अबके जनरल स्मिथ सन्मुख था, उसने मुँह की खाई थी,
-काना और मंदरा सखियाँ रानी के सँग आई थीं,
-युद्ध क्षेत्र में उन दोनों ने भारी मार मचाई थी,
-पर, पीछे ह्यूरोज़ आ गया, हाय! घिरी अब रानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-तो भी रानी मार-काटकर चलती बनी सैन्य के पार,
-किंतु सामने नाला आया, था वह संकट विषम अपार,
-घोड़ा अड़ा, नया घोड़ा था, इतने में आ गए सवार,
-रानी एक, शत्रु बहुतेरे, होने लगे वार पर वार,
-घायल होकर गिरी सिंहनी उसे वीर-गति पानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-रानी गई सिधार, चिता अब उसकी दिव्य सवारी थी,
-मिला तेज़ से तेज़, तेज़ की वह सच्ची अधिकारी थी,
-अभी उम्र कुल तेइस की थी, मनुज नहीं अवतारी थी,
-हमको जीवित करने आई बन स्वतंत्रता नारी थी,
-दिखा गई पथ, सिखा गई हमको जो सीख सिखानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
-ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥
-
-जाओ रानी याद रखेंगे हम कृतज्ञ भारतवासी,
-यह तेरा बलिदान जगावेगा स्वतंत्रता अविनाशी,
-होवे चुप इतिहास, लगे सच्चाई को चाहे फाँसी,
-हो मदमाती विजय, मिटा दे गोलों से चाहे झाँसी,
-तेरा स्मारक तू ही होगी, तू ख़ुद अमिट निशानी थी।
-बुंदेले हरबोलों के मुँह हमने सुनी कहानी थी।
 ख़ूब लड़ी मर्दानी वह तो झाँसी वाली रानी थी॥</div>
       <div class="poem-text-en">Simhaasan hil uthe, raajvanshon ne bhrikuti taani thi,
 Boodhe Bharat mein bhi aayi phir se nai jawaani thi,
@@ -729,143 +372,8 @@ Gumi hui aazaadi ki keemat sabne pehchaani thi,
 Door firangi ko karne ki sabne man mein thaani thi,
 Chamak uthi san sattavan mein vah talvaar puraani thi.
 Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Kanpur ke Nana ki munhboli bahan "Chhabili" thi,
-Lakshmibai naam, pita ki vah santaan akeli thi,
-Nana ke sang padhti thi vah, Nana ke sang kheli thi,
-Barchhi, dhaal, kripaan, kataari uski yahi saheli thi,
-Veer Shivaji ki gaathaayen usko yaad zubaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Lakshmi thi ya Durga thi vah swayam veerta ki avataar,
-Dekh Marathe pulakit hote uski talvaaron ke vaar,
-Nakli yuddh, vyuh ki rachna aur khelna khoob shikaar,
-Sainya gherna, durg todna, ye the uske priya khilvaar,
-Maharashtra-kul-devi uski bhi aaradhya Bhavani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Hui veerta ki vaibhav ke saath sagai Jhansi mein,
-Byaah hua Rani ban aayi Lakshmibai Jhansi mein,
-Rajmahal mein baji badhaai khushiyaan chhaain Jhansi mein,
-Subhat Bundhelon ki virudaavali-si vah aayi Jhansi mein,
-Chitra ne Arjun ko paaya, Shiv se mili Bhavani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Udit hua saubhaagya, mudit mahalon mein ujyaali chhaai,
-Kintu kaalgati chupke-chupke kaali ghata gher laayi,
-Teer chalaanewale kar mein use choodiyan kab bhaayin,
-Rani vidhwa hui haay! Vidhi ko bhi nahin daya aayi,
-Nissantaan mare Raajaji Rani shok-samaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Bujha deep Jhansi ka tab Dalhousie man mein harshaya,
-Rajya hadap karne ka usne yah achha avasar paaya,
-Fauran faujen bhej durg par apna jhanda fahraaya,
-Laavaaris ka vaaris bankar British Rajya Jhansi aaya,
-Ashrupurn Rani ne dekha Jhansi hui biraani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Anunay-vinay nahin sunta hai, vikat firangi ki maaya,
-Vyaapari ban daya chahta tha jab yah Bharat aaya,
-Dalhousie ne pair pasaare ab to palat gayi kaaya,
-Rajaon navabon ko bhi usne pairon thukraaya,
-Rani daasi bani, bani yah daasi ab maharaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Chhini rajdhaani Dehli ki, liya Lucknow baaton-baat,
-Qaid Peshwa tha Bithur mein, hua Nagpur ka bhi ghaat,
-Udaipur, Tanjore, Satara, Karnataka ki kaun bisaat,
-Jabki Sindh, Punjab, Brahm par abhi hua tha vajra-nipaat,
-Bangale, Madras aadi ki bhi to yahi kahaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Rani roin ranivaason mein Begum gham se thin bezaar,
-Unke gehne-kapde bikte the Kalkatte ke baazaar,
-Sare-aam neelaim chhaapte the Angrezon ke akhbaar,
-"Nagpur ke zevar le lo" "Lucknow ke lo naulakh haar",
-Yon parde ki izzat par— deshi ke haath bikaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Kutiyon mein thi visham vedna, mahalon mein aahat apmaan,
-Veer sainikon ke man mein tha, apne purukhon ka abhimaan,
-Nana Dhundhupant Peshwa juta raha tha sab saamaan,
-Bahan Chhabili ne ran-Chandi ka kar diya prakat aahvaan,
-Hua yagya praarambh unhen to soyi jyoti jagaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Mahalon ne di aag, jhonpdi ne jwaala sulagaai thi,
-Yah swatantrata ki chingaari antartam se aayi thi,
-Jhansi cheti, Dilli cheti, Lucknow lapten chhaai thin,
-Meerut, Kanpur, Patna ne bhaari dhoom machaai thi,
-Jabalpur, Kolhapur mein bhi kuchh halchal uksaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Is swatantrata-mahayagya mein kai veervar aaye kaam,
-Nana Dhundhupant, Tantiya, chatur Azimullah sarnam,
-Ahmad Shah Maulvi, Thakur Kunwarsingh sainik abhiraam,
-Bharat ke itihas-gagan mein amar rahenge jinke naam,
-Lekin aaj jurm kahlaati unki jo qurbaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Inki gaatha chhod chalen hum Jhansi ke maidaanon mein,
-Jahaan khadi hai Lakshmibai mard bani mardaanon mein,
-Lieutenant Walker aa pahuncha, aage badha jawaanon mein,
-Rani ne talvaar khench li, hua dvandv asamaanon mein,
-Zakhmi hokar Walker bhaaga, use ajab hairaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Rani badhi Kalpi aayi, kar sau mil nirantar paar,
-Ghoda thakkar gira bhoomi par, gaya swarg tatkal sidhaar,
-Yamuna-tat par Angrezon ne phir khaai Rani se haar,
-Vijayi Rani aage chal di, kiya Gwalior par adhikaar,
-Angrezon ke mitra Scindia ne chhhodi rajdhaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Vijay mili, par Angrezon ki phir sena ghir aayi thi,
-Abke General Smith sanmukh tha, usne munh ki khaayi thi,
-Kaana aur Mandra sakhiyaan Rani ke sang aayi thin,
-Yuddh kshetra mein un donon ne bhaari maar machaai thi,
-Par, peechhe Huyrose aa gaya, haay! ghiri ab Rani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-To bhi Rani maar-kaatkar chalti bani sainya ke paar,
-Kintu saamne naala aaya, tha vah sankat visham apaar,
-Ghoda ada, naya ghoda tha, itne mein aa gaye savaar,
-Rani ek, shatru bahutere, hone lage vaar par vaar,
-Ghaayal hokar giri singhaani use veer-gati paani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Rani gayi sidhaar, chita ab uski divya savaari thi,
-Mila tej se tej, tej ki vah sachchi adhikaari thi,
-Abhi umra kul teis ki thi, manuj nahin avataari thi,
-Hamko jeevit karne aayi ban swatantrata naari thi,
-Dikha gayi path, sikha gayi hamko jo seekh sikhaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
-Khoob ladi mardaani vah to Jhansi wali Rani thi.
-
-Jaao Rani yaad rakhenge hum kritagna Bharatvaasi,
-Yah tera balidaan jagaavega swatantrata avinaashi,
-Hove chup itihaas, lage sachchaai ko chaahe phaansi,
-Ho madmaati vijay, mita de golon se chaahe Jhansi,
-Tera smarak tu hi hogi, tu khud amit nishaani thi.
-Bundele harbolon ke munh humne suni kahaani thi.
 Khoob ladi mardaani vah to Jhansi wali Rani thi.</div>
+      <a class="read-more" href="/poems/jhansi-ki-rani.html">Full poem &rarr;</a>
     </article>
 
     <hr class="poem-sep">
@@ -877,142 +385,25 @@ Khoob ladi mardaani vah to Jhansi wali Rani thi.</div>
       <div class="poem-title-en">Jo Beet Gayi</div>
       <div class="poem-author">Harivansh Rai Bachchan</div>
       <div class="poem-rule"></div>
-      <div class="poem-text-hi">जो बीत गई सो बात गई
-जीवन में एक सितारा था
+      <div class="poem-text-hi">जो बीत गई सो बात गई, जीवन में एक सितारा था,
+माना वह बेहद प्यारा था, वह डूब गया तो डूब गया।
 
-माना वह बेहद प्यारा था
-वह डूब गया तो डूब गया
+अम्बर के आनन को देखो, कितने इसके तारे टूटे,
+कितने इसके प्यारे छूटे, जो छूट गए फिर कहाँ मिले।
 
-अम्बर के आनन को देखो
-कितने इसके तारे टूटे
+पर बोलो टूटे तारों पर, कब अम्बर शोक मनाता है।
 
-कितने इसके प्यारे छूटे
-जो छूट गए फिर कहाँ मिले
+जो बीत गई सो बात गई।</div>
+      <div class="poem-text-en">Jo beet gayi so baat gayi, jeevan mein ek sitaara tha,
+Maana vah behad pyaara tha, vah doob gaya to doob gaya.
 
-पर बोलो टूटे तारों पर
-कब अम्बर शोक मनाता है
+Ambar ke aanan ko dekho, kitne iske taare toote,
+Kitne iske pyaare chhoote, jo chhoot gaye phir kahaan mile.
 
-जो बीत गई सो बात गई
+Par bolo toote taaron par, kab ambar shok manaata hai.
 
-जीवन में वह था एक कुसुम
-थे उस पर नित्य निछावर तुम
-
-वह सूख गया तो सूख गया
-
-मधुवन की छाती को देखो
-सूखी कितनी इसकी कलियाँ
-
-मुरझाई कितनी वल्लरियाँ
-जो मुरझाई फिर कहाँ खिलीं
-
-पर बोलो सूखे फूलों पर
-कब मधुवन शोर मचाता है
-
-जो बीत गई सो बात गई
-
-जीवन में मधु का प्याला था
-तुमने तन मन दे डाला था
-
-वह टूट गया तो टूट गया
-
-मदिरालय का आँगन देखो
-कितने प्याले हिल जाते हैं
-
-गिर मिट्टी में मिल जाते हैं
-जो गिरते हैं कब उठते हैं
-
-पर बोलो टूटे प्यालों पर
-कब मदिरालय पछताता है
-
-जो बीत गई सो बात गई
-
-मृदु मिट्टी के हैं बने हुए
-मधु घट फूटा ही करते हैं
-
-लघु जीवन लेकर आए हैं
-प्याले टूटा ही करते हैं
-
-फिर भी मदिरालय के अंदर
-मधु के घट हैं मधु प्याले हैं
-
-जो मादकता के मारे हैं
-वे मधु लूटा ही करते हैं
-
-वह कच्चा पीने वाला है
-जिसकी ममता घट प्यालों पर
-
-जो सच्चे मधु से जला हुआ
-कब रोता है चिल्लाता है
-
-जो बीत गई सो बात गई</div>
-      <div class="poem-text-en">Jo beet gayi so baat gayi
-Jeevan mein ek sitaara tha
-
-Maana vah behad pyaara tha
-Vah doob gaya to doob gaya
-
-Ambar ke aanan ko dekho
-Kitne iske taare toote
-
-Kitne iske pyaare chhoote
-Jo chhoot gaye phir kahaan mile
-
-Par bolo toote taaron par
-Kab ambar shok manaata hai
-
-Jo beet gayi so baat gayi
-
-Jeevan mein vah tha ek kusum
-The us par nitya nichhaavar tum
-
-Vah sookh gaya to sookh gaya
-
-Madhuvan ki chaati ko dekho
-Sookhi kitni iski kaliyan
-
-Murjhaayi kitni vallariyan
-Jo murjhaayi phir kahaan khilin
-
-Par bolo sookhe phoolon par
-Kab madhuvan shor machaata hai
-
-Jo beet gayi so baat gayi
-
-Jeevan mein madhu ka pyaala tha
-Tumne tan man de daala tha
-
-Vah toot gaya to toot gaya
-
-Madiralay ka aangan dekho
-Kitne pyaale hil jaate hain
-
-Gir mitti mein mil jaate hain
-Jo girte hain kab uthte hain
-
-Par bolo toote pyaalon par
-Kab madiralay pachtata hai
-
-Jo beet gayi so baat gayi
-
-Mridu mitti ke hain bane hue
-Madhu ghat phoota hi karte hain
-
-Laghu jeevan lekar aaye hain
-Pyaale toota hi karte hain
-
-Phir bhi madiralay ke andar
-Madhu ke ghat hain madhu pyaale hain
-
-Jo maadakta ke maare hain
-Ve madhu loota hi karte hain
-
-Vah kaccha peene wala hai
-Jiski mamta ghat pyaalon par
-
-Jo sacche madhu se jala hua
-Kab rota hai chillaata hai
-
-Jo beet gayi so baat gayi</div>
+Jo beet gayi so baat gayi.</div>
+      <a class="read-more" href="/poems/jo-beet-gayi.html">Full poem &rarr;</a>
     </article>
 
     <hr class="poem-sep">
