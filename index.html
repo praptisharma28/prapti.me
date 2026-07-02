@@ -548,8 +548,56 @@
     <!-- GitHub Activity -->
     <section>
       <h2>GitHub Activity</h2>
-      <img src="https://ghchart.rshah.org/praptisharma28" alt="GitHub contribution graph" style="width:100%;border-radius:4px;opacity:0.85;" />
+      <div id="gh-heatmap" style="overflow-x:auto;padding-bottom:0.25rem;"></div>
     </section>
+    <script>
+    (async () => {
+      const username = 'praptisharma28';
+      const container = document.getElementById('gh-heatmap');
+      try {
+        const res = await fetch(`https://github-contributions-api.jogruber.de/v4/${username}?y=last`);
+        const data = await res.json();
+        const contribs = data.contributions;
+
+        const style = document.createElement('style');
+        style.textContent = `
+          .gh-grid { display:grid; grid-template-rows:repeat(7,11px); grid-auto-flow:column; gap:2px; width:max-content; }
+          .gh-cell { width:11px; height:11px; border-radius:2px; display:block; text-decoration:none; }
+          .gh-cell:hover { outline:1px solid rgba(0,0,0,0.35); outline-offset:-1px; }
+          .gh-l0 { background:#ebedf0; }
+          .gh-l1 { background:#9be9a8; }
+          .gh-l2 { background:#40c463; }
+          .gh-l3 { background:#30a14e; }
+          .gh-l4 { background:#216e39; }
+        `;
+        document.head.appendChild(style);
+
+        const grid = document.createElement('div');
+        grid.className = 'gh-grid';
+
+        const firstDay = new Date(contribs[0].date + 'T00:00:00');
+        for (let i = 0; i < firstDay.getDay(); i++) {
+          const pad = document.createElement('span');
+          pad.className = 'gh-cell gh-l0';
+          grid.appendChild(pad);
+        }
+
+        for (const day of contribs) {
+          const a = document.createElement('a');
+          a.className = `gh-cell gh-l${day.level}`;
+          a.href = `https://github.com/${username}?from=${day.date}&to=${day.date}&tab=overview`;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.title = `${day.count} contribution${day.count !== 1 ? 's' : ''} on ${day.date}`;
+          grid.appendChild(a);
+        }
+
+        container.appendChild(grid);
+      } catch (e) {
+        container.innerHTML = '<a href="https://github.com/praptisharma28" target="_blank" style="font-size:0.85rem;color:var(--muted);">github.com/praptisharma28</a>';
+      }
+    })();
+    </script>
 
     <!-- Achievements -->
     <section>
